@@ -1,0 +1,22 @@
+<IndexScreen>:
+    GridLayout:
+        cols: 1
+        spacing: 10
+        BoxLayout:
+            orientation: 'horizontal'
+            size_hint: (1, .1)
+            TextInput:
+                size_hint_x: .8
+            Button:
+                text: 'Generate'
+                size_hint_x: 0.2
+                on_press: root.generate_image()
+        Image:
+            id: img
+            size_hint_y: .8
+            
+
+<RootWidget>:
+    IndexScreen:
+        id: index_screen
+        name: 'Image Generator'
